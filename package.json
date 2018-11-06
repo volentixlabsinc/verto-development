@@ -5,14 +5,14 @@
   "description": "A multi-currency crypto wallet with initial support for EOS & VTX",
   "main": "./dist/electron/main.js",
   "private": true,
-  "homepage": "https://github.com/Volentix/verto",
+  "homepage": "https://github.com/Volentix/verto-development",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Volentix/verto.git"
+    "url": "https://github.com/Volentix/verto-development.git"
   },
   "bugs": {
-    "url": "https://github.com/Volentix/verto/issues"
+    "url": "https://github.com/Volentix/verto-development/issues"
   },
   "scripts": {
     "build": "node .electron-vue/build.js && CSC_IDENTITY_AUTO_DISCOVERY=true electron-builder",
@@ -89,14 +89,7 @@
     "win": {
       "icon": "icons/windows/icon.ico",
       "target": "nsis",
-      "publisherName": "Volentix Labs, Inc.",
-      "nsis": {
-        "oneClick": false,
-        "perMachine": true,
-        "allowElevation": true,
-        "deleteAppDataOnUninstall": true,
-        "createDesktopShortcut": "always"
-      }
+      "publisherName": "Volentix Labs, Inc."
     },
     "linux": {
       "icon": "icons/linux",
