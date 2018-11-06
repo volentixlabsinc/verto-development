@@ -1,0 +1,30 @@
+.DS_Store
+dist/electron/*
+dist/web/*
+build/*
+dist/
+.nuxt/
+!build/icons
+coverage
+node_modules/
+npm-debug.log
+npm-debug.log.*
+thumbs.db
+!.gitkeep
+.vscode
+.env
+# binaries
+src/renderer/resources/mac/cleos
+src/renderer/resources/linux/cleos
+src/renderer/resources/win/cleos
+
+# logs
+npm-debug.log
+yarn-error.log
+#electron-package build
+bin
+
+resources
+
+#Config for releases
+electron-builder.yml
