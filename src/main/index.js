@@ -44,8 +44,8 @@ function createWindow () {
   Menu.setApplicationMenu(Menu.buildFromTemplate(vertoMenu))
 }
 
-app.setAppUserModelId("com.volentix.verto"); // test
-app.setAsDefaultProtocolClient('ps-verto'); // test
+app.setAppUserModelId("io.volentix.verto"); // test
+// app.setAsDefaultProtocolClient('ps-verto'); // test
 
 app.on('ready', createWindow)
 
