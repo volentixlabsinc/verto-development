@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow, Menu, shell } from 'electron'
+import { app, BrowserWindow, Menu, shell, Notification } from 'electron' // test
 import { autoUpdater } from 'electron-updater'
 const log = require('electron-log');
 
@@ -43,6 +43,9 @@ function createWindow () {
   })
   Menu.setApplicationMenu(Menu.buildFromTemplate(vertoMenu))
 }
+
+app.setAppUserModelId("com.volentix.verto"); // test
+app.setAsDefaultProtocolClient('ps-verto'); // test
 
 app.on('ready', createWindow)
 

@@ -1,6 +1,6 @@
 {
   "name": "Verto",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Volentix Labs <volentix.io>",
   "description": "A multi-currency crypto wallet with initial support for EOS & VTX",
   "main": "./dist/electron/main.js",
@@ -90,6 +90,11 @@
       "icon": "icons/windows/icon.ico",
       "target": "nsis",
       "publisherName": "Volentix Labs, Inc."
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": true
     },
     "linux": {
       "icon": "icons/linux",
